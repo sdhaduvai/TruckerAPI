@@ -33,7 +33,10 @@ public class EmployeeController {
                 @ApiResponse(code = 500, message = "Internal Server Error")
     })
     public List<Employee> findAll() {
-        return service.findAll();
+
+        Integer a = 1;
+        a.toString();
+    return service.findAll();
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/{id}",
